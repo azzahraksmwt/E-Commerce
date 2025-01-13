@@ -28,6 +28,7 @@ namespace BulkyBook.Utility
             try
             {
                 var request = new HttpRequestMessage(HttpMethod.Post, "https://api.brevo.com/v3/smtp/email");
+                request.Headers.Add("api-key", "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");
 
                 var payload = new
                 {
